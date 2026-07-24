@@ -1,0 +1,7 @@
+# Orion Oeste
+# PLACEHOLDER DE DOMINIO en la línea Sitemap: reemplazar por el dominio real.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.orionoeste.com.ar/sitemap.xml

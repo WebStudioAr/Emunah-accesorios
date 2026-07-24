@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo completo — Orion Oeste</title>
+  <meta
+    name="description"
+    content="Catálogo completo de Orion Oeste: útiles escolares, cuadernos, escritura, arte, oficina, juguetes y regalería. Buscá y filtrá por categoría."
+  />
+  <meta property="og:title" content="Catálogo completo — Orion Oeste" />
+  <meta property="og:description" content="Buscá y filtrá todo el catálogo de Orion Oeste: librería, juguetería, oficina y regalería." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta name="theme-color" content="#f2661b" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body data-page="catalogo">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" data-header>
+    <span class="site-header__accent" aria-hidden="true"></span>
+    <div class="container site-header__bar">
+      <a class="site-header__logo" href="index.html" aria-label="Orion Oeste — ir al inicio">
+        <img class="site-header__logo-img" src="assets/images/brand/logo.jpg" alt="Orion Oeste" width="878" height="399" />
+        <span class="site-header__logo-sub">Librería, juguetería e impresiones</span>
+      </a>
+
+      <nav class="site-header__nav" aria-label="Navegación principal">
+        <a class="site-header__nav-link" href="index.html">Inicio</a>
+        <a class="site-header__nav-link" data-nav-link="catalogo" href="catalogo.html">Catálogo</a>
+        <a class="site-header__nav-link" href="index.html#juguetes">Juguetes</a>
+        <a class="site-header__nav-link" href="index.html#impresiones">Impresiones</a>
+        <a class="site-header__nav-link" href="index.html#contacto">Contacto</a>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="site-header__icon-btn site-header__desktop-only" href="#buscar" aria-label="Buscar productos en el catálogo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+        <a class="site-header__icon-btn site-header__desktop-only" data-wa="general" href="#" aria-label="Escribinos por WhatsApp">
+          <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+            <path d="M16.04 4C9.4 4 4 9.4 4 16.04c0 2.35.66 4.55 1.8 6.42L4 28l5.68-1.75a11.9 11.9 0 0 0 6.36 1.82h.01c6.63 0 12.03-5.4 12.03-12.03C28.08 9.4 22.68 4 16.04 4Zm0 21.9h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.37 1.04 1.06-3.28-.24-.34a9.86 9.86 0 0 1-1.53-5.29c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.45 9.47-9.31 9.47Z"></path>
+          </svg>
+        </a>
+        <button class="site-header__icon-btn site-header__cart-btn" type="button" data-cart-open aria-label="Ver carrito">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L20.5 8H6.2" />
+            <circle cx="9.5" cy="20" r="1.4" fill="currentColor" stroke="none" />
+            <circle cx="17" cy="20" r="1.4" fill="currentColor" stroke="none" />
+          </svg>
+          <span class="site-header__cart-badge" data-cart-count hidden>0</span>
+        </button>
+        <button
+          class="site-header__icon-btn site-header__hamburger"
+          type="button"
+          data-mobile-menu-open
+          aria-label="Abrir menú"
+          aria-haspopup="dialog"
+          aria-controls="mobile-menu"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="17" x2="20" y2="17"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu data-open="false" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+    <div class="mobile-menu__backdrop"></div>
+    <div class="mobile-menu__panel">
+      <div class="mobile-menu__head">
+        <span class="site-header__logo">
+          <img class="site-header__logo-img" src="assets/images/brand/logo.jpg" alt="Orion Oeste" width="878" height="399" />
+        </span>
+        <button class="site-header__icon-btn" type="button" data-mobile-menu-close aria-label="Cerrar menú">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="5" y1="5" x2="19" y2="19"></line>
+            <line x1="19" y1="5" x2="5" y2="19"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu__nav" aria-label="Navegación mobile">
+        <a class="mobile-menu__link" href="index.html"><span class="tri-badge" aria-hidden="true"></span>Inicio</a>
+        <a class="mobile-menu__link" href="catalogo.html"><span class="tri-badge" aria-hidden="true"></span>Catálogo</a>
+        <a class="mobile-menu__link" href="index.html#juguetes"><span class="tri-badge" aria-hidden="true"></span>Juguetes</a>
+        <a class="mobile-menu__link" href="index.html#impresiones"><span class="tri-badge" aria-hidden="true"></span>Impresiones</a>
+        <a class="mobile-menu__link" href="index.html#contacto"><span class="tri-badge" aria-hidden="true"></span>Contacto</a>
+        <a class="mobile-menu__link" data-wa="general" href="#"><span class="tri-badge" aria-hidden="true"></span>WhatsApp</a>
+      </nav>
+      <a class="btn btn--primary btn--block mobile-menu__cta" data-wa="general" href="#">Escribinos por WhatsApp</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="catalog-page">
+      <div class="catalog-page__bg" aria-hidden="true"></div>
+      <div class="catalog-container catalog-page__inner">
+        <nav class="breadcrumbs" aria-label="Miga de pan">
+          <a href="index.html">Inicio</a><span class="breadcrumbs__sep" aria-hidden="true">/</span>
+          <span aria-current="page">Catálogo</span>
+        </nav>
+
+        <div class="catalog-hero__head">
+          <div class="catalog-hero__intro">
+            <p class="catalog-hero__eyebrow">
+              <span class="hand">Catálogo</span>
+              <svg class="catalog-hero__eyebrow-mark" viewBox="0 0 26 18" fill="none" stroke="#F45A16" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <path d="M2 15 8 3" />
+                <path d="M12 16 17 2" />
+                <path d="M20 14 24 6" />
+              </svg>
+            </p>
+            <h1 class="catalog-hero__title">Catálogo completo</h1>
+            <p class="catalog-hero__desc">Buscá por nombre o filtrá por categoría y subcategoría.</p>
+          </div>
+
+          <div class="catalog-postit" aria-hidden="true">
+            <span class="catalog-postit__tape"></span>
+            <p class="catalog-postit__text">Todo para<br />estudiar, crear,<br />regalar y jugar</p>
+            <svg class="catalog-postit__heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 21s-7-4.35-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.65-9.5 9-9.5 9Z" />
+            </svg>
+          </div>
+        </div>
+
+        <form class="search-bar catalog-search" id="catalog-search-form" data-tab-label="Buscar" role="search">
+          <label for="catalog-search-input" class="sr-only">Buscar productos</label>
+          <span class="search-bar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </span>
+          <input class="search-bar__input" id="catalog-search-input" name="q" type="search" placeholder="Buscá cuadernos, juguetes, lapiceras…" />
+          <button class="btn btn--primary search-bar__submit" type="submit">Buscar</button>
+        </form>
+
+        <!-- Disparador de filtros en mobile -->
+        <div class="mobile-only" style="margin-top: var(--sp-5)">
+          <button class="btn btn--secondary btn--block" type="button" data-filter-drawer-open>
+            Filtros y orden
+          </button>
+        </div>
+
+        <!-- Barra de filtros en desktop (no comprimida, siempre visible) -->
+        <div class="filter-bar-desktop">
+          <div class="filter-bar-desktop__row">
+            <div class="filter-chips" data-category-chips></div>
+            <div class="filter-bar-desktop__sort">
+              <label for="sort-select-desktop" class="text-muted" style="font-size: var(--fs-small)">Ordenar por</label>
+              <select id="sort-select-desktop" data-sort-select>
+                <option value="relevance">Relevancia</option>
+                <option value="price-asc">Precio: menor a mayor</option>
+                <option value="price-desc">Precio: mayor a menor</option>
+                <option value="name-asc">Nombre: A-Z</option>
+              </select>
+              <button class="filter-bar-desktop__clear" type="button" data-clear-filters>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6" /><line x1="8" y1="12" x2="20" y2="12" /><line x1="12" y1="18" x2="20" y2="18" /><circle cx="6" cy="12" r="1.6" fill="currentColor" stroke="none" /><circle cx="9" cy="18" r="1.6" fill="currentColor" stroke="none" /></svg>
+                Limpiar filtros
+              </button>
+            </div>
+          </div>
+          <div class="filter-chips" data-subcategory-chips></div>
+        </div>
+
+        <p class="catalog-results-count" id="results-count" aria-live="polite"></p>
+
+        <div class="product-grid" id="catalog-grid" aria-live="polite"></div>
+
+        <nav class="pagination" id="catalog-pagination" aria-label="Paginación del catálogo">
+          <button class="pagination__btn pagination__btn--prev" type="button" data-page-prev aria-label="Página anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
+            Anterior
+          </button>
+          <div class="pagination__pages" data-page-numbers></div>
+          <button class="pagination__btn pagination__btn--next" type="button" data-page-next aria-label="Página siguiente">
+            Siguiente
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+          </button>
+        </nav>
+
+        <div class="pagination__top">
+          <button class="btn btn--ghost btn--sm" type="button" data-scroll-top>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5" /><path d="m5 12 7-7 7 7" /></svg>
+            Volver al principio
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Drawer de filtros (mobile) -->
+  <div class="filter-drawer" data-filter-drawer data-open="false" role="dialog" aria-modal="true" aria-label="Filtros del catálogo">
+    <div class="filter-drawer__backdrop"></div>
+    <div class="filter-drawer__panel">
+      <div class="filter-drawer__handle"></div>
+      <div class="filter-drawer__head">
+        <h2 style="margin: 0; font-size: 1.2rem">Filtros y orden</h2>
+        <button class="site-header__icon-btn" type="button" data-filter-drawer-close aria-label="Cerrar filtros">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"></line><line x1="19" y1="5" x2="5" y2="19"></line></svg>
+        </button>
+      </div>
+
+      <div class="filter-drawer__group">
+        <p class="filter-drawer__group-title">Categoría</p>
+        <div class="filter-chips" data-category-chips></div>
+      </div>
+
+      <div class="filter-drawer__group">
+        <p class="filter-drawer__group-title">Subcategoría</p>
+        <div class="filter-chips" data-subcategory-chips></div>
+      </div>
+
+      <div class="filter-drawer__group">
+        <label for="sort-select-mobile" class="filter-drawer__group-title" style="display: block">Ordenar por</label>
+        <select id="sort-select-mobile" data-sort-select style="width: 100%; min-height: 44px; border-radius: var(--radius-sm); border: 1px solid var(--warm-gray-strong); padding: 8px 12px">
+          <option value="relevance">Relevancia</option>
+          <option value="price-asc">Precio: menor a mayor</option>
+          <option value="price-desc">Precio: mayor a menor</option>
+          <option value="name-asc">Nombre: A-Z</option>
+        </select>
+      </div>
+
+      <div class="filter-drawer__footer">
+        <button class="btn btn--secondary btn--block" type="button" data-clear-filters>Limpiar</button>
+        <button class="btn btn--primary btn--block" type="button" data-filter-drawer-close>Ver resultados</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-zigzag" aria-hidden="true"></div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" data-footer>
+    <div class="footer-main">
+      <div class="footer-cards">
+        <!-- Card 1: Orion Oeste -->
+        <div class="footer-card footer-card--brand">
+          <span class="footer-card__tape" aria-hidden="true"></span>
+          <div class="footer-card__brand-head">
+            <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 20H2Z" fill="var(--cta-orange)" /></svg>
+            Orion Oeste
+          </div>
+          <p class="footer-card__text">Librería, juguetería e impresiones.</p>
+          <p class="footer-card__text">
+            Todo para estudiar, crear, regalar y jugar. Te acompañamos con productos y atención que hacen la
+            diferencia.
+          </p>
+          <div data-footer-social>
+            <a class="footer-card__row" data-social="instagram" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4.2" /><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" /></svg>
+              Instagram
+            </a>
+            <a class="footer-card__row" data-social="facebook" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.5 8.5h-2a1.5 1.5 0 0 0-1.5 1.5v2h3.3l-.5 3H12v7H9v-7H6.5v-3H9v-2.3A4.2 4.2 0 0 1 13.2 5h2.3Z" /></svg>
+              Facebook
+            </a>
+            <a class="footer-card__row" data-footer-email href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 6.5 8 6 8-6" /></svg>
+              <span data-footer-email-text>info@orionoeste.com.ar</span>
+            </a>
+          </div>
+          <svg class="footer-card__doodle footer-card__doodle--brand" viewBox="0 0 220 60" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="20" width="13" height="34" /><rect x="17" y="12" width="13" height="42" /><rect x="32" y="24" width="13" height="30" />
+            <line x1="2" y1="54" x2="45" y2="54" />
+            <circle cx="76" cy="38" r="15" /><circle cx="70" cy="33" r="1.8" fill="currentColor" stroke="none" /><circle cx="82" cy="33" r="1.8" fill="currentColor" stroke="none" />
+            <path d="M69 44c3 3 11 3 14 0" /><path d="M64 26c2-6 18-6 20 0" />
+            <rect x="108" y="30" width="26" height="24" rx="3" /><line x1="114" y1="30" x2="114" y2="8" /><line x1="121" y1="30" x2="124" y2="6" /><line x1="128" y1="30" x2="128" y2="10" />
+            <circle cx="160" cy="46" r="9" />
+            <path d="M182 54c0-14 8-24 8-24s8 10 8 24" />
+          </svg>
+        </div>
+
+        <!-- Card 2: Navegación -->
+        <nav class="footer-card footer-card--nav" aria-label="Navegación del footer">
+          <h2 class="footer-card__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h12v17l-6-4-6 4Z" /></svg>
+            Navegación
+          </h2>
+          <ul class="footer-nav-list">
+            <li><a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg> Inicio</a></li>
+            <li><a href="catalogo.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg> Catálogo</a></li>
+            <li><a href="index.html#juguetes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg> Juguetes</a></li>
+            <li><a href="index.html#impresiones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg> Impresiones</a></li>
+            <li><a href="index.html#contacto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg> Contacto</a></li>
+          </ul>
+          <svg class="footer-card__doodle footer-card__doodle--nav" viewBox="0 0 70 76" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="16" y="30" width="34" height="38" rx="3" /><line x1="23" y1="30" x2="23" y2="8" /><line x1="33" y1="30" x2="36" y2="6" /><line x1="43" y1="30" x2="43" y2="10" />
+            <path d="m56 62 6-11 6 11Z" />
+          </svg>
+        </nav>
+
+        <!-- Card 3: Visitanos -->
+        <div class="footer-card footer-card--visit">
+          <h2 class="footer-card__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" /><circle cx="12" cy="9.5" r="2.3" /></svg>
+            Visitanos
+          </h2>
+          <p class="footer-card__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 4.5 3.5h15L21 9" /><path d="M4 9v11h16V9" /><path d="M9 20v-6h6v6" /></svg>
+            <span data-footer-address>Tte. Gral. Julio Argentino Roca 999, B1686 Hurlingham, Buenos Aires</span>
+          </p>
+          <p class="footer-card__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></svg>
+            <span data-footer-hours>Lun a vie 9 a 19 h · Sáb 9 a 13 y 16 a 19 h · Dom cerrado</span>
+          </p>
+          <hr class="footer-dotted" />
+          <p class="footer-card__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4Z" /><path d="M9 4v14" /><path d="M15 6.5v14" /></svg>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tte.%20Gral.%20Julio%20Argentino%20Roca%20999%2C%20Hurlingham" target="_blank" rel="noopener">Cómo llegar</a>
+          </p>
+          <p class="footer-card__row">
+            <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 4C9.4 4 4 9.4 4 16.04c0 2.35.66 4.55 1.8 6.42L4 28l5.68-1.75a11.9 11.9 0 0 0 6.36 1.82h.01c6.63 0 12.03-5.4 12.03-12.03C28.08 9.4 22.68 4 16.04 4Zm0 21.9h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.37 1.04 1.06-3.28-.24-.34a9.86 9.86 0 0 1-1.53-5.29c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.45 9.47-9.31 9.47Z"></path></svg>
+            <a data-wa="general" href="#" aria-label="Escribir por WhatsApp al 011 15-5967-4675">WhatsApp: <span data-footer-phone>011 15-5967-4675</span></a>
+          </p>
+        </div>
+
+        <!-- Card 4: Entrega, pagos y accesibilidad -->
+        <div class="footer-card footer-card--delivery">
+          <h2 class="footer-card__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l1 12.5a1.5 1.5 0 0 1-1.5 1.5H6.5A1.5 1.5 0 0 1 5 20.5Z" /><path d="M9 8V6a3 3 0 0 1 6 0v2" /></svg>
+            Entrega, pagos y accesibilidad
+          </h2>
+          <p class="footer-card__text" style="max-width: none">Retiro en el local · Entrega a domicilio</p>
+          <hr class="footer-dotted" />
+          <p class="footer-card__text" style="max-width: none">Entrada accesible para personas en silla de ruedas</p>
+          <div class="payment-icons">
+            <span>NFC</span>
+            <span>Crédito</span>
+            <span>Débito</span>
+          </div>
+          <svg class="footer-card__doodle footer-card__doodle--delivery" viewBox="0 0 100 66" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m20 6 3.4 7.2 7.9 1.1-5.7 5.5 1.4 7.9L20 24l-6.9 3.7 1.3-7.9-5.6-5.5 7.9-1.1Z" />
+            <path d="M55 10a11 11 0 0 1 11 11v24a7 7 0 0 1-14 0V19a3.5 3.5 0 0 1 7 0v22" />
+            <line x1="6" y1="46" x2="30" y2="46" /><line x1="6" y1="55" x2="24" y2="55" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <span class="footer-bottom-bar__holes" aria-hidden="true"><span></span><span></span><span></span></span>
+      <div class="footer-bottom-bar__inner">
+        <span>© <span data-copyright-year>2026</span> Orion Oeste. Todos los derechos reservados.</span>
+        <span class="footer-bottom-bar__location">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" /><circle cx="12" cy="9.5" r="2.3" /></svg>
+          Hurlingham, Buenos Aires
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-fab" data-whatsapp-fab data-wa="catalog" href="#" aria-label="¿Necesitás ayuda? Escribinos por WhatsApp a Orion Oeste">
+    <span class="whatsapp-fab__capsule" aria-hidden="true">
+      <span class="whatsapp-fab__title">¿Necesitás ayuda?</span>
+      <span class="whatsapp-fab__subtitle">Escribinos por WhatsApp</span>
+    </span>
+    <span class="whatsapp-fab__circle">
+      <svg class="whatsapp-fab__deco" viewBox="0 0 60 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+        <path d="M4 10c4-6 10-6 12 0" /><path d="M44 6c4-4 9-3 10 2" /><circle cx="52" cy="16" r="1.4" fill="currentColor" stroke="none" />
+      </svg>
+      <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+        <path d="M16.04 4C9.4 4 4 9.4 4 16.04c0 2.35.66 4.55 1.8 6.42L4 28l5.68-1.75a11.9 11.9 0 0 0 6.36 1.82h.01c6.63 0 12.03-5.4 12.03-12.03C28.08 9.4 22.68 4 16.04 4Zm0 21.9h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.37 1.04 1.06-3.28-.24-.34a9.86 9.86 0 0 1-1.53-5.29c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.45 9.47-9.31 9.47Zm5.42-7.4c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.15-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.51h-.56c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.2 2.09 3.2 5.08 4.48.71.3 1.26.49 1.69.63.71.22 1.35.19 1.86.12.57-.09 1.75-.71 2-1.4.24-.68.24-1.27.17-1.4-.07-.13-.27-.2-.56-.35Z"></path>
+      </svg>
+    </span>
+  </a>
+
+  <script src="js/data/store-info.js"></script>
+  <script src="js/data/products.js"></script>
+  <script src="js/data/campaigns.js"></script>
+  <script src="js/data/reviews.js"></script>
+  <script src="js/data/gallery.js"></script>
+
+  <script src="js/lib/icons.js"></script>
+  <script src="js/lib/whatsapp.js"></script>
+  <script src="js/lib/cart.js"></script>
+  <script src="js/lib/store-status.js"></script>
+  <script src="js/lib/render.js"></script>
+  <script src="js/lib/reveal.js"></script>
+  <script src="js/lib/carousel.js"></script>
+  <script src="js/lib/menu.js"></script>
+  <script src="js/lib/cart-drawer.js"></script>
+  <script src="js/lib/quickview.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="js/pages/catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+/*
+  Orion Oeste — Design Tokens
+  Sistema: papel + triángulo naranja de la fachada + celeste pastel.
+  60% blanco cálido, 25% naranja pastel, 10% celeste pastel, 5% naranja vibrante.
+*/
+
+:root {
+  /* ---- Color: base de papel ---- */
+  --paper: #fdfaf4;
+  --paper-2: #f7f1e6;
+  --paper-line: #e7ddc9;
+
+  /* ---- Color: naranja (marca) ---- */
+  --orange-50: #fdf1e6;
+  --orange-100: #fbe3ca;
+  --orange-pastel: #f6c9a0;
+  --orange-pastel-strong: #efb27c;
+  --orange-vibrant: #f2661b;
+  --orange-vibrant-dark: #d6540f;
+  --orange-ink: #7a3410;
+
+  /* ---- Color: celeste (contraste, sector juguetes) ---- */
+  --sky-50: #eef8fb;
+  --sky-pastel: #cdeaf3;
+  --sky-pastel-strong: #a9dbe9;
+  --sky-ink: #1f5b6e;
+
+  /* ---- Color: acentos ---- */
+  --cream: #f5e6b8;
+  --cream-strong: #eed690;
+
+  /* ---- Color: texto y bordes ---- */
+  --graphite: #3a332c;
+  --graphite-soft: #6b6156;
+  --warm-gray: #e4ddd3;
+  --warm-gray-strong: #cfc4b4;
+  --white: #ffffff;
+
+  /* ---- Color: estado ---- */
+  --success: #3f7d4f;
+  --success-bg: #e6f2e8;
+  --danger: #b3452f;
+  --danger-bg: #f8e9e4;
+
+  /* ---- Tipografía ---- */
+  --font-display: "Baloo 2", "Fredoka", ui-rounded, system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-hand: "Caveat", cursive;
+
+  --fs-h1: clamp(2rem, 1.55rem + 2vw, 3.2rem);
+  --fs-h2: clamp(1.5rem, 1.25rem + 1.1vw, 2.25rem);
+  --fs-h3: clamp(1.2rem, 1.05rem + 0.6vw, 1.6rem);
+  --fs-body-lg: 1.125rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  /* ---- Espaciado (base 4px) ---- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+
+  /* ---- Radios ---- */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* ---- Sombras (suaves, sin glow) ---- */
+  --shadow-sm: 0 2px 6px rgba(58, 51, 44, 0.06);
+  --shadow-md: 0 4px 12px rgba(58, 51, 44, 0.08);
+  --shadow-lg: 0 10px 28px rgba(58, 51, 44, 0.1);
+
+  /* ---- Layout ---- */
+  --container-max: 1240px;
+  --header-h: 64px;
+  --catalog-max-width: 1400px;
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 150ms;
+  --dur-base: 260ms;
+  --dur-slow: 420ms;
+
+  /* ---- Z-index ---- */
+  --z-header: 100;
+  --z-drawer: 200;
+  --z-whatsapp: 150;
+  --z-lightbox: 300;
+
+  /* ---- CTA final / Footer (rediseño hoja de cuaderno + cards) ----
+     Paleta puntual para estas dos secciones, tomada tal cual del brief
+     visual. No reemplaza los tokens generales de arriba: el resto del
+     sitio sigue usando --orange-vibrant, --graphite, etc. */
+  --cta-bg: #fbf8f2;
+  --cta-paper: #fffdf8;
+  --cta-ink: #302b27;
+  --cta-ink-soft: #625b55;
+  --cta-orange: #ff5a0a;
+  --cta-orange-hover: #e94d00;
+  --cta-line-h: rgba(121, 164, 187, 0.22);
+  --cta-line-v: rgba(231, 111, 82, 0.42);
+  --cta-orange-line: rgba(255, 90, 10, 0.34);
+  --postit-yellow: #ffe789;
+
+  --footer-pastel: #f8cfab;
+  --footer-pastel-light: #fbe4cc;
+  --footer-card-bg: rgba(255, 253, 248, 0.78);
+  --footer-card-border: rgba(178, 118, 69, 0.12);
+  --footer-bar-bg: #e95a13;
+  --footer-max-width: 1340px;
+
+  /* ---- Juguetes destacados (rediseño) ---- */
+  --toys-bg-top: #eef9fd;
+  --toys-bg-bottom: #e7f5fb;
+  --toys-eyebrow: #f45a16;
+  --toys-card-bg: #fffdf9;
+  --toys-card-border: rgba(170, 130, 92, 0.18);
+  --toys-cat: #23536b;
+  --toys-age: #716961;
+  --toys-avail-green: #3a8a47;
+  --toys-avail-dot: #4daa58;
+  --toys-badge-nuevo: #5cbde4;
+  --toys-badge-regalo: #45bda7;
+  --toys-explore-bg: #fff9f0;
+  --toys-explore-bg-2: #fff6e9;
+  --toys-explore-border: rgba(255, 90, 10, 0.45);
+  --toys-cloud: #ddeff6;
+  --toys-star: #f9c94b;
+  --toys-plane: #bbdceb;
+  --toys-dotted-orange: #f5b337;
+  --toys-media-sky: #d9f0f8;
+  --toys-media-cream: #fff1b9;
+  --toys-media-green: #e6f1d6;
+  --toys-media-peach: #f9ddc7;
+
+  /* ---- Campaña "Vuelta al cole" ---- */
+  --bts-desc: #514a44;
+  --bts-card-bg: rgba(255, 253, 249, 0.72);
+  --bts-card-border: rgba(191, 124, 68, 0.15);
+  --bts-benefit-circle: #fff0e3;
+  --bts-benefit-title: #3a342f;
+  --bts-benefit-desc: #70665d;
+  --bts-postit: #ffe36d;
+  --bts-postit-2: #ffe267;
+  --bts-tape: rgba(228, 194, 129, 0.72);
+  --bts-benefits-bg: rgba(255, 253, 249, 0.82);
+  --bts-benefits-border: rgba(191, 124, 68, 0.14);
+  --bts-badge-border: rgba(244, 90, 22, 0.1);
+
+  /* ---- Ubicación, horarios y contacto ---- */
+  --visit-bg-top: #fcf9f3;
+  --visit-bg-bottom: #faf6ef;
+  --visit-card-bg: #fffdf9;
+  --visit-card-border: rgba(157, 110, 72, 0.16);
+  --visit-margin-line: rgba(226, 112, 82, 0.36);
+  --visit-ring: #e8d8c4;
+  --visit-day: #4b443e;
+  --visit-time: #302b27;
+  --visit-closed: #f05a21;
+  --visit-dashed: rgba(129, 102, 78, 0.22);
+  --visit-open-bg: #e4f4e7;
+  --visit-open-text: #237a3b;
+  --visit-closed-bg: #fbe7de;
+  --visit-closed-text: #b54824;
+  --visit-fold: #fff1d9;
+  --visit-fold-shade: #f3d9b3;
+  --visit-maps-text: #2475c5;
+  --visit-strip-bg: #e7f7fc;
+  --visit-strip-bg-2: #dff3f9;
+
+  /* Chips de servicios (5 colores controlados) */
+  --chip-retiro-bg: #e7f4fc;
+  --chip-retiro-fg: #3b9ec4;
+  --chip-entrega-bg: #e6f5e9;
+  --chip-entrega-fg: #3c9b58;
+  --chip-compras-bg: #fff1d8;
+  --chip-compras-fg: #e89a27;
+  --chip-accesible-bg: #e5f5fa;
+  --chip-accesible-fg: #319abe;
+  --chip-pagos-bg: #efeafb;
+  --chip-pagos-fg: #7562c9;
+}

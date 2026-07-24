@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orion Oeste — Librería, juguetería e impresiones en Hurlingham</title>
+  <meta
+    name="description"
+    content="Librería, juguetería, regalería, impresiones y copiados en Hurlingham. Útiles escolares, juguetes y regalos. Consultá por WhatsApp o visitá el local."
+  />
+  <!-- Canonical / og:url pendientes: falta confirmar el dominio final del sitio. -->
+  <meta property="og:title" content="Orion Oeste — Librería, juguetería e impresiones en Hurlingham" />
+  <meta
+    property="og:description"
+    content="Todo para estudiar, crear, regalar y jugar. Librería, juguetería, regalería, impresiones y copiados en Hurlingham."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Orion Oeste" />
+  <meta name="theme-color" content="#f2661b" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+
+  <!--
+    JSON-LD de negocio local. Mantener sincronizado a mano con
+    js/data/store-info.js si cambian dirección, teléfono u horarios.
+    Coordenadas (geo) omitidas: el cliente no las confirmó todavía.
+  -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Orion Oeste",
+      "description": "Librería, juguetería, regalería, impresiones y copiados en Hurlingham.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tte. Gral. Julio Argentino Roca 999",
+        "addressLocality": "Hurlingham",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "B1686",
+        "addressCountry": "AR"
+      },
+      "telephone": "+5491159674675",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "16:00", "closes": "19:00" }
+      ],
+      "paymentAccepted": "Efectivo, Tarjeta de crédito, Tarjeta de débito, Pagos móviles NFC"
+    }
+  </script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" data-header>
+    <span class="site-header__accent" aria-hidden="true"></span>
+    <div class="container site-header__bar">
+      <a class="site-header__logo" href="index.html" aria-label="Orion Oeste — ir al inicio">
+        <img class="site-header__logo-img" src="assets/images/brand/logo.jpg" alt="Orion Oeste" width="878" height="399" />
+        <span class="site-header__logo-sub">Librería, juguetería e impresiones</span>
+      </a>
+
+      <nav class="site-header__nav" aria-label="Navegación principal">
+        <a class="site-header__nav-link" data-nav-link="home" href="index.html">Inicio</a>
+        <a class="site-header__nav-link" href="catalogo.html">Catálogo</a>
+        <a class="site-header__nav-link" href="#juguetes">Juguetes</a>
+        <a class="site-header__nav-link" href="#impresiones">Impresiones</a>
+        <a class="site-header__nav-link" href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="site-header__icon-btn site-header__desktop-only" href="catalogo.html#buscar" aria-label="Buscar productos en el catálogo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+        <a class="site-header__icon-btn site-header__desktop-only" data-wa="general" href="#" aria-label="Escribinos por WhatsApp">
+          <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+            <path d="M16.04 4C9.4 4 4 9.4 4 16.04c0 2.35.66 4.55 1.8 6.42L4 28l5.68-1.75a11.9 11.9 0 0 0 6.36 1.82h.01c6.63 0 12.03-5.4 12.03-12.03C28.08 9.4 22.68 4 16.04 4Zm0 21.9h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.37 1.04 1.06-3.28-.24-.34a9.86 9.86 0 0 1-1.53-5.29c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.45 9.47-9.31 9.47Z"></path>
+          </svg>
+        </a>
+        <button class="site-header__icon-btn site-header__cart-btn" type="button" data-cart-open aria-label="Ver carrito">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L20.5 8H6.2" />
+            <circle cx="9.5" cy="20" r="1.4" fill="currentColor" stroke="none" />
+            <circle cx="17" cy="20" r="1.4" fill="currentColor" stroke="none" />
+          </svg>
+          <span class="site-header__cart-badge" data-cart-count hidden>0</span>
+        </button>
+        <button
+          class="site-header__icon-btn site-header__hamburger"
+          type="button"
+          data-mobile-menu-open
+          aria-label="Abrir menú"
+          aria-haspopup="dialog"
+          aria-controls="mobile-menu"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="17" x2="20" y2="17"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu data-open="false" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+    <div class="mobile-menu__backdrop"></div>
+    <div class="mobile-menu__panel">
+      <div class="mobile-menu__head">
+        <span class="site-header__logo">
+          <img class="site-header__logo-img" src="assets/images/brand/logo.jpg" alt="Orion Oeste" width="878" height="399" />
+        </span>
+        <button class="site-header__icon-btn" type="button" data-mobile-menu-close aria-label="Cerrar menú">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="5" y1="5" x2="19" y2="19"></line>
+            <line x1="19" y1="5" x2="5" y2="19"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu__nav" aria-label="Navegación mobile">
+        <a class="mobile-menu__link" href="index.html"><span class="tri-badge" aria-hidden="true"></span>Inicio</a>
+        <a class="mobile-menu__link" href="catalogo.html"><span class="tri-badge" aria-hidden="true"></span>Catálogo</a>
+        <a class="mobile-menu__link" href="#juguetes"><span class="tri-badge" aria-hidden="true"></span>Juguetes</a>
+        <a class="mobile-menu__link" href="#impresiones"><span class="tri-badge" aria-hidden="true"></span>Impresiones</a>
+        <a class="mobile-menu__link" href="#contacto"><span class="tri-badge" aria-hidden="true"></span>Contacto</a>
+        <a class="mobile-menu__link" data-wa="general" href="#"><span class="tri-badge" aria-hidden="true"></span>WhatsApp</a>
+      </nav>
+      <a class="btn btn--primary btn--block mobile-menu__cta" data-wa="general" href="#">Escribinos por WhatsApp</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero__photo-wrap">
+        <img class="hero__photo" src="assets/images/hero/hero_bg.webp" alt="Escritorio de librería con cuaderno, lápices de colores, un post-it, un peluche y el triángulo naranja de Orion Oeste" loading="eager" />
+      </div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="section-heading__eyebrow"><span class="hand">Hola, Hurlingham</span></p>
+          <h1>Todo para estudiar, crear, regalar y jugar.</h1>
+          <p class="hero__subtitle">Librería, juguetería, regalería, impresiones y copiados en Hurlingham.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary btn--lg" href="catalogo.html">Ver catálogo</a>
+            <a class="btn btn--secondary btn--lg" href="#contacto">Cómo llegar</a>
+          </div>
+          <p class="hero__trust">
+            <span class="icon-star" aria-hidden="true">★</span>
+            <span id="hero-trust-text">4,5 · Más de 120 reseñas</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="tri-divider" aria-hidden="true"></div>
+
+    <!-- ===== Accesos por categoría ===== -->
+    <section class="section" aria-labelledby="categorias-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Explorá</p>
+          <h2 class="section-heading__title" id="categorias-title">Encontrá tu sección</h2>
+        </div>
+        <div class="carousel category-carousel" data-carousel data-carousel-edges>
+          <button class="carousel__nav carousel__nav--prev" type="button" data-carousel-prev aria-label="Categoría anterior">‹</button>
+          <div class="carousel__track" data-carousel-track id="category-track" role="list" aria-label="Categorías de productos"></div>
+          <button class="carousel__nav carousel__nav--next" type="button" data-carousel-next aria-label="Categoría siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Juguetes destacados (ToysSection) ===== -->
+    <section class="toys-section" id="juguetes" aria-labelledby="juguetes-title">
+      <div class="container">
+        <div class="toys-section__head">
+          <div>
+            <p class="toys-section__eyebrow">Para jugar</p>
+            <h2 class="toys-section__title" id="juguetes-title">También hay lugar para <em>jugar</em></h2>
+            <p class="toys-section__desc">Una selección de juguetes para todas las edades.</p>
+          </div>
+          <a class="toys-section__cta" href="catalogo.html?categoria=juguetes">Ver todos los juguetes</a>
+        </div>
+
+        <div class="toys-section__carousel carousel" data-carousel data-carousel-edges>
+          <button class="carousel__nav carousel__nav--prev" type="button" data-carousel-prev aria-label="Juguete anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
+          </button>
+          <div class="carousel__track toy-carousel__track" data-carousel-track id="toys-track" role="list" aria-label="Juguetes destacados"></div>
+          <button class="carousel__nav carousel__nav--next" type="button" data-carousel-next aria-label="Juguete siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+          </button>
+          <div class="carousel__dots toy-carousel__dots" data-carousel-dots aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Campaña de temporada: Vuelta al cole (BackToSchoolCampaign) ===== -->
+    <section class="back-to-school-section" aria-labelledby="campaign-title">
+      <div class="back-to-school-container" id="campaign-container"></div>
+    </section>
+
+    <!-- ===== Beneficios ===== -->
+    <section class="section section--tint benefits-section" aria-labelledby="beneficios-title">
+      <div class="container">
+        <div class="section-heading section-heading--center" style="max-width: 480px">
+          <p class="section-heading__eyebrow">Por qué elegirnos</p>
+          <h2 class="section-heading__title" id="beneficios-title">Pensado para vos</h2>
+        </div>
+      </div>
+      <div class="postit-grid postit-grid--full" id="benefits-grid"></div>
+    </section>
+
+    <!-- ===== Galería del local ===== -->
+    <section class="section gallery-section" aria-labelledby="galeria-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Conocé el local</p>
+          <h2 class="section-heading__title" id="galeria-title">Así es Orion Oeste</h2>
+        </div>
+        <div class="gallery" id="gallery-root">
+          <div class="gallery__main" id="gallery-main"></div>
+          <div class="gallery__strip" id="gallery-strip" role="list" aria-label="Más fotos del local"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reseñas (Google) — ReviewsSection ===== -->
+    <section class="reviews-section" aria-labelledby="reviews-title">
+      <div class="reviews-section__bg">
+        <div class="reviews-section__inner">
+          <div class="reviews-header">
+            <p class="reviews-header__eyebrow">
+              <span class="hand">Confianza</span>
+              <svg class="reviews-header__eyebrow-mark" viewBox="0 0 26 18" fill="none" stroke="#F45A16" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <path d="M2 15 8 3" />
+                <path d="M12 16 17 2" />
+                <path d="M20 14 24 6" />
+              </svg>
+            </p>
+            <h2 class="reviews-header__title" id="reviews-title">Lo que dicen de nosotros</h2>
+            <svg class="reviews-header__underline" viewBox="0 0 280 12" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M3 8c40-9 90 2 138-3 45-5 95 4 136-4" fill="none" stroke="#FF5A0A" stroke-width="4" stroke-linecap="round" />
+            </svg>
+            <p class="reviews-header__desc">
+              Cada reseña nos impulsa a seguir mejorando y a brindar el mejor servicio todos los días.
+            </p>
+          </div>
+
+          <div class="reviews-panel">
+            <div class="reviews-summary" id="reviews-summary"></div>
+
+            <div class="reviews-carousel carousel" data-carousel data-carousel-edges>
+              <button class="carousel__nav carousel__nav--prev reviews-carousel__nav" type="button" data-carousel-prev aria-label="Reseña anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
+              </button>
+              <div class="carousel__track reviews-carousel__track" data-carousel-track id="reviews-track" role="list" aria-label="Reseñas de clientes en Google"></div>
+              <button class="carousel__nav carousel__nav--next reviews-carousel__nav" type="button" data-carousel-next aria-label="Siguiente reseña">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+              </button>
+              <div class="carousel__dots reviews-carousel__dots" data-carousel-dots aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Impresiones y copiados ===== -->
+    <section class="section section--tint" id="impresiones" aria-labelledby="impresiones-title">
+      <div class="container">
+        <div class="section-heading" style="max-width: 620px">
+          <p class="section-heading__eyebrow">Impresiones y copiados</p>
+          <h2 class="section-heading__title" id="impresiones-title">Imprimimos eso que necesitás</h2>
+          <p class="section-heading__desc">Trabajos prácticos, documentos, apuntes y más. Coordinamos por WhatsApp.</p>
+        </div>
+
+        <div class="print-sheet" data-reveal>
+          <p class="print-tag" style="margin-bottom: var(--sp-4)">Servicios</p>
+          <div class="print-services-grid">
+            <div class="print-service">
+              <span class="print-service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6"/><rect x="4" y="9" width="16" height="8" rx="1.5"/><path d="M6 17v4h12v-4"/></svg></span>
+              <div><strong>Blanco y negro</strong><p class="text-muted" style="margin: 4px 0 0">Apuntes y trabajos en escala de grises.</p></div>
+            </div>
+            <div class="print-service">
+              <span class="print-service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18"/></svg></span>
+              <div><strong>A color</strong><p class="text-muted" style="margin: 4px 0 0">Gráficos, láminas y presentaciones.</p></div>
+            </div>
+            <div class="print-service">
+              <span class="print-service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="12" y2="16"/></svg></span>
+              <div><strong>Fotocopias</strong><p class="text-muted" style="margin: 4px 0 0">Simples o dobles, en el momento.</p></div>
+            </div>
+            <div class="print-service">
+              <span class="print-service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5"/><line x1="2" y1="7" x2="5" y2="7"/><line x1="2" y1="11" x2="5" y2="11"/><line x1="2" y1="15" x2="5" y2="15"/></svg></span>
+              <div><strong>Anillados</strong><p class="text-muted" style="margin: 4px 0 0">Para trabajos prácticos y carpetas.</p></div>
+            </div>
+            <div class="print-service">
+              <span class="print-service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 4l16 16M20 4 4 20"/></svg></span>
+              <div><strong>Plastificados</strong><p class="text-muted" style="margin: 4px 0 0">Protegé documentos y láminas.</p></div>
+            </div>
+            <div class="print-service">
+              <span class="print-service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v5h5"/><path d="M6 3h8l5 5v13H6z"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg></span>
+              <div><strong>Trabajos prácticos</strong><p class="text-muted" style="margin: 4px 0 0">Impresión y armado completo.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="postit postit--cream" style="margin-top: var(--sp-6); max-width: 520px" data-reveal>
+          <p class="postit__title">¿Cómo pido una impresión?</p>
+          <p class="postit__text">
+            Escribinos por WhatsApp contándonos qué necesitás imprimir y coordinamos el envío del archivo y el retiro
+            o entrega. Por ahora no se pueden subir archivos directamente desde esta web.
+          </p>
+        </div>
+
+        <div style="margin-top: var(--sp-6)">
+          <a class="btn btn--primary btn--lg" data-wa="prints" href="#" target="_blank" rel="noopener">Enviar archivo por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Ubicación, horarios y contacto (VisitSection) ===== -->
+    <section class="visit-section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container" id="visit-container"></div>
+    </section>
+
+    <!-- ===== CTA final — NotebookPaper ===== -->
+    <section class="section final-cta-section">
+      <div class="container">
+        <div class="notebook-cta" data-reveal>
+          <div class="notebook-cta__holes" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <span class="notebook-cta__clip" aria-hidden="true">
+            <svg viewBox="0 0 34 60" fill="none" stroke="#9a8a78" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 5a11 11 0 0 1 11 11v29a7 7 0 0 1-14 0V16a3.5 3.5 0 0 1 7 0v24" />
+            </svg>
+          </span>
+          <span class="notebook-cta__fold" aria-hidden="true"></span>
+
+          <div class="notebook-cta__grid">
+            <div class="notebook-cta__content">
+              <h2 class="notebook-cta__title">
+                ¿Buscás algo
+                <span class="notebook-cta__highlight">
+                  en particular
+                  <svg class="notebook-cta__underline" viewBox="0 0 160 14" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M2 9 C 30 3, 60 12, 90 6 C 115 2, 135 10, 158 5" fill="none" stroke-width="5" stroke-linecap="round" />
+                  </svg>
+                </span>?
+              </h2>
+              <p class="notebook-cta__desc">
+                Escribinos y te ayudamos a encontrarlo, recomendarte opciones o preparar tu pedido.
+              </p>
+              <div class="notebook-cta__ctas">
+                <a class="btn btn--primary btn--lg" data-wa="general" href="#" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp a Orion Oeste">
+                  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                    <path d="M16.04 4C9.4 4 4 9.4 4 16.04c0 2.35.66 4.55 1.8 6.42L4 28l5.68-1.75a11.9 11.9 0 0 0 6.36 1.82h.01c6.63 0 12.03-5.4 12.03-12.03C28.08 9.4 22.68 4 16.04 4Zm0 21.9h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.37 1.04 1.06-3.28-.24-.34a9.86 9.86 0 0 1-1.53-5.29c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.45 9.47-9.31 9.47Zm5.42-7.4c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.15-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.51h-.56c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.2 2.09 3.2 5.08 4.48.71.3 1.26.49 1.69.63.71.22 1.35.19 1.86.12.57-.09 1.75-.71 2-1.4.24-.68.24-1.27.17-1.4-.07-.13-.27-.2-.56-.35Z"></path>
+                  </svg>
+                  Consultar por WhatsApp
+                </a>
+                <a class="btn btn--secondary btn--lg" href="catalogo.html">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 0 4 23.5Z" /><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 1 2.5 2.5Z" />
+                  </svg>
+                  Explorar catálogo
+                </a>
+              </div>
+              <div class="notebook-cta__pills">
+                <span class="benefit-pill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M4.5 20c1.2-4 4-6 7.5-6s6.3 2 7.5 6" /></svg>
+                  Asesoramiento personalizado
+                </span>
+                <span class="benefit-pill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l1 12.5a1.5 1.5 0 0 1-1.5 1.5H6.5A1.5 1.5 0 0 1 5 20.5Z" /><path d="M9 8V6a3 3 0 0 1 6 0v2" /></svg>
+                  Retiro en tienda
+                </span>
+                <span class="benefit-pill">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="7" width="13" height="10" rx="1.2" /><path d="M14 10h4l4 3.2V17h-8" /><circle cx="6" cy="18.5" r="1.6" /><circle cx="17.5" cy="18.5" r="1.6" /></svg>
+                  Entrega a domicilio
+                </span>
+              </div>
+            </div>
+
+            <div class="notebook-cta__deco">
+              <div class="postit-note">
+                <span class="postit-note__tape" aria-hidden="true"></span>
+                <div class="postit-note__body">
+                  <span class="postit-note__text">Estamos para ayudarte</span>
+                  <svg class="postit-note__heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 21s-7-4.35-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.65-9.5 9-9.5 9Z" />
+                  </svg>
+                </div>
+              </div>
+              <svg class="notebook-cta__plane" viewBox="0 0 170 120" fill="none" aria-hidden="true">
+                <path class="notebook-cta__plane-trail" d="M6 100 C 40 92, 70 55, 118 30" stroke-width="2" stroke-dasharray="4 6" fill="none" />
+                <g stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" fill="none">
+                  <path class="notebook-cta__plane-path" d="M118 18 148 30 118 42 125 30Z" />
+                  <path class="notebook-cta__plane-path" d="M125 30 118 18M125 30 118 42" />
+                </g>
+                <polygon class="notebook-cta__plane-dot" points="140,10 146,10 143,3" opacity="0.5" />
+                <polygon class="notebook-cta__plane-dot" points="152,16 158,16 155,9" opacity="0.4" />
+                <polygon class="notebook-cta__plane-dot" points="145,24 151,24 148,17" opacity="0.3" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-zigzag" aria-hidden="true"></div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" data-footer>
+    <div class="footer-main">
+      <div class="footer-cards">
+        <!-- Card 1: Orion Oeste -->
+        <div class="footer-card footer-card--brand">
+          <span class="footer-card__tape" aria-hidden="true"></span>
+          <div class="footer-card__brand-head">
+            <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 20H2Z" fill="var(--cta-orange)" /></svg>
+            Orion Oeste
+          </div>
+          <p class="footer-card__text">Librería, juguetería e impresiones.</p>
+          <p class="footer-card__text">
+            Todo para estudiar, crear, regalar y jugar. Te acompañamos con productos y atención que hacen la
+            diferencia.
+          </p>
+          <div data-footer-social>
+            <a class="footer-card__row" data-social="instagram" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4.2" /><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" /></svg>
+              Instagram
+            </a>
+            <a class="footer-card__row" data-social="facebook" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.5 8.5h-2a1.5 1.5 0 0 0-1.5 1.5v2h3.3l-.5 3H12v7H9v-7H6.5v-3H9v-2.3A4.2 4.2 0 0 1 13.2 5h2.3Z" /></svg>
+              Facebook
+            </a>
+            <a class="footer-card__row" data-footer-email href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 6.5 8 6 8-6" /></svg>
+              <span data-footer-email-text>info@orionoeste.com.ar</span>
+            </a>
+          </div>
+          <svg class="footer-card__doodle footer-card__doodle--brand" viewBox="0 0 220 60" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="20" width="13" height="34" /><rect x="17" y="12" width="13" height="42" /><rect x="32" y="24" width="13" height="30" />
+            <line x1="2" y1="54" x2="45" y2="54" />
+            <circle cx="76" cy="38" r="15" /><circle cx="70" cy="33" r="1.8" fill="currentColor" stroke="none" /><circle cx="82" cy="33" r="1.8" fill="currentColor" stroke="none" />
+            <path d="M69 44c3 3 11 3 14 0" /><path d="M64 26c2-6 18-6 20 0" />
+            <rect x="108" y="30" width="26" height="24" rx="3" /><line x1="114" y1="30" x2="114" y2="8" /><line x1="121" y1="30" x2="124" y2="6" /><line x1="128" y1="30" x2="128" y2="10" />
+            <circle cx="160" cy="46" r="9" />
+            <path d="M182 54c0-14 8-24 8-24s8 10 8 24" />
+          </svg>
+        </div>
+
+        <!-- Card 2: Navegación -->
+        <nav class="footer-card footer-card--nav" aria-label="Navegación del footer">
+          <h2 class="footer-card__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h12v17l-6-4-6 4Z" /></svg>
+            Navegación
+          </h2>
+          <ul class="footer-nav-list">
+            <li><a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg> Inicio</a></li>
+            <li><a href="catalogo.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg> Catálogo</a></li>
+            <li><a href="#juguetes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg> Juguetes</a></li>
+            <li><a href="#impresiones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg> Impresiones</a></li>
+            <li><a href="#contacto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg> Contacto</a></li>
+          </ul>
+          <svg class="footer-card__doodle footer-card__doodle--nav" viewBox="0 0 70 76" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="16" y="30" width="34" height="38" rx="3" /><line x1="23" y1="30" x2="23" y2="8" /><line x1="33" y1="30" x2="36" y2="6" /><line x1="43" y1="30" x2="43" y2="10" />
+            <path d="m56 62 6-11 6 11Z" />
+          </svg>
+        </nav>
+
+        <!-- Card 3: Visitanos -->
+        <div class="footer-card footer-card--visit">
+          <h2 class="footer-card__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" /><circle cx="12" cy="9.5" r="2.3" /></svg>
+            Visitanos
+          </h2>
+          <p class="footer-card__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 4.5 3.5h15L21 9" /><path d="M4 9v11h16V9" /><path d="M9 20v-6h6v6" /></svg>
+            <span data-footer-address>Tte. Gral. Julio Argentino Roca 999, B1686 Hurlingham, Buenos Aires</span>
+          </p>
+          <p class="footer-card__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></svg>
+            <span data-footer-hours>Lun a vie 9 a 19 h · Sáb 9 a 13 y 16 a 19 h · Dom cerrado</span>
+          </p>
+          <hr class="footer-dotted" />
+          <p class="footer-card__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6.5v14L9 18l6 2.5 6-2.5v-14L15 6.5 9 4Z" /><path d="M9 4v14" /><path d="M15 6.5v14" /></svg>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tte.%20Gral.%20Julio%20Argentino%20Roca%20999%2C%20Hurlingham" target="_blank" rel="noopener">Cómo llegar</a>
+          </p>
+          <p class="footer-card__row">
+            <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 4C9.4 4 4 9.4 4 16.04c0 2.35.66 4.55 1.8 6.42L4 28l5.68-1.75a11.9 11.9 0 0 0 6.36 1.82h.01c6.63 0 12.03-5.4 12.03-12.03C28.08 9.4 22.68 4 16.04 4Zm0 21.9h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.37 1.04 1.06-3.28-.24-.34a9.86 9.86 0 0 1-1.53-5.29c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.45 9.47-9.31 9.47Z"></path></svg>
+            <a data-wa="general" href="#" aria-label="Escribir por WhatsApp al 011 15-5967-4675">WhatsApp: <span data-footer-phone>011 15-5967-4675</span></a>
+          </p>
+        </div>
+
+        <!-- Card 4: Entrega, pagos y accesibilidad -->
+        <div class="footer-card footer-card--delivery">
+          <h2 class="footer-card__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l1 12.5a1.5 1.5 0 0 1-1.5 1.5H6.5A1.5 1.5 0 0 1 5 20.5Z" /><path d="M9 8V6a3 3 0 0 1 6 0v2" /></svg>
+            Entrega, pagos y accesibilidad
+          </h2>
+          <p class="footer-card__text" style="max-width: none">Retiro en el local · Entrega a domicilio</p>
+          <hr class="footer-dotted" />
+          <p class="footer-card__text" style="max-width: none">Entrada accesible para personas en silla de ruedas</p>
+          <div class="payment-icons">
+            <span>NFC</span>
+            <span>Crédito</span>
+            <span>Débito</span>
+          </div>
+          <svg class="footer-card__doodle footer-card__doodle--delivery" viewBox="0 0 100 66" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m20 6 3.4 7.2 7.9 1.1-5.7 5.5 1.4 7.9L20 24l-6.9 3.7 1.3-7.9-5.6-5.5 7.9-1.1Z" />
+            <path d="M55 10a11 11 0 0 1 11 11v24a7 7 0 0 1-14 0V19a3.5 3.5 0 0 1 7 0v22" />
+            <line x1="6" y1="46" x2="30" y2="46" /><line x1="6" y1="55" x2="24" y2="55" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <span class="footer-bottom-bar__holes" aria-hidden="true"><span></span><span></span><span></span></span>
+      <div class="footer-bottom-bar__inner">
+        <span>© <span data-copyright-year>2026</span> Orion Oeste. Todos los derechos reservados.</span>
+        <span class="footer-bottom-bar__location">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" /><circle cx="12" cy="9.5" r="2.3" /></svg>
+          Hurlingham, Buenos Aires
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-fab" data-whatsapp-fab data-wa="general" href="#" aria-label="¿Necesitás ayuda? Escribinos por WhatsApp a Orion Oeste">
+    <span class="whatsapp-fab__capsule" aria-hidden="true">
+      <span class="whatsapp-fab__title">¿Necesitás ayuda?</span>
+      <span class="whatsapp-fab__subtitle">Escribinos por WhatsApp</span>
+    </span>
+    <span class="whatsapp-fab__circle">
+      <svg class="whatsapp-fab__deco" viewBox="0 0 60 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+        <path d="M4 10c4-6 10-6 12 0" /><path d="M44 6c4-4 9-3 10 2" /><circle cx="52" cy="16" r="1.4" fill="currentColor" stroke="none" />
+      </svg>
+      <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+        <path d="M16.04 4C9.4 4 4 9.4 4 16.04c0 2.35.66 4.55 1.8 6.42L4 28l5.68-1.75a11.9 11.9 0 0 0 6.36 1.82h.01c6.63 0 12.03-5.4 12.03-12.03C28.08 9.4 22.68 4 16.04 4Zm0 21.9h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.37 1.04 1.06-3.28-.24-.34a9.86 9.86 0 0 1-1.53-5.29c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.13 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.45 9.47-9.31 9.47Zm5.42-7.4c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.15-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.51h-.56c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.2 2.09 3.2 5.08 4.48.71.3 1.26.49 1.69.63.71.22 1.35.19 1.86.12.57-.09 1.75-.71 2-1.4.24-.68.24-1.27.17-1.4-.07-.13-.27-.2-.56-.35Z"></path>
+      </svg>
+    </span>
+  </a>
+
+  <script src="js/data/store-info.js"></script>
+  <script src="js/data/products.js"></script>
+  <script src="js/data/campaigns.js"></script>
+  <script src="js/data/reviews.js"></script>
+  <script src="js/data/gallery.js"></script>
+
+  <script src="js/lib/icons.js"></script>
+  <script src="js/lib/whatsapp.js"></script>
+  <script src="js/lib/cart.js"></script>
+  <script src="js/lib/store-status.js"></script>
+  <script src="js/lib/render.js"></script>
+  <script src="js/lib/reveal.js"></script>
+  <script src="js/lib/carousel.js"></script>
+  <script src="js/lib/menu.js"></script>
+  <script src="js/lib/cart-drawer.js"></script>
+  <script src="js/lib/quickview.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="js/pages/home.js"></script>
+</body>
+</html>
